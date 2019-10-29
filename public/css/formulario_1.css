@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body{
+	background-color: orange;
+}
+
+#form{
+	margin-left: 10%;
+	margin-top: 1%;
+	width: 80%;
+	background-color: white;
+}
+
+label{
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+fieldset#FSendereco{
+	margin-bottom: 5%;
+}
+
+nav#pag{
+	margin-left: 40%;
+}
+
+nav#pag0{
+	margin-left: 145%;
+}
+
+button#antes{
+	background-color: orange;
+	border-color: orange;
+	margin-left: 30%;
+}
+
+button#depois0{
+	background-color: orange;
+	border-color: orange;
+	margin-left: 140%;
+}
+
+button#depois{
+	background-color: orange;
+	border-color: orange;
+	margin-left: 40%;
+}
+
+button#inicio{
+	background-color: orange;
+	border-color: orange;
+	margin-left: 15%;
+	margin-top: 1%;
+}
+
+i#form2{
+	margin-top: 20%;
+	margin-left: 70%;
+}
+
+span{
+	font-size: 13pt;
+	font-weight: bold;
+}

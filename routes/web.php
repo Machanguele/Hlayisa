@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('formularioAluno', 'Controller@formularioAluno');
+Route::get('formularioEncarregado', 'Controller@formularioEncarregado');
+Route::post('encarregado.store', 'EncarregadoController@store');
+Route::post('encarregado.store', 'EncarregadoController@store');
