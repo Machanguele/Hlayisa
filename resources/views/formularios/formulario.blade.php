@@ -17,8 +17,14 @@
         <i class="fa fa-chevron-left fa-2x"></i><span>Inicio</span>
     </button>
 
+
+
     <div class="border border rounded" id="form">
-        <form method="post" id="inscricao" action="comentario@gmail.com">
+        <form method="post" id="inscricao" action="aluno.store">
+            @csrf
+                @foreach ($idEncarregado as $idEnc )
+                    <input class="form-control fa" type="hidden" name="idEncarregado" id="idEncarregado" value="{{$idEnc->idEncarregado}}">
+                @endforeach
 
             <fieldset id="dp" class="ml-4 mr-4 mt-4 mb-4">
                 <legend>Dados do Aluno</legend>
@@ -49,6 +55,19 @@
                         </div>
                     </div>
                 </div>
+                 <div class="form-group row">
+                        <div class="col-2">
+                            <label>Data de Nasc.</label>
+                        </div>
+
+                        <div class="col-4">
+                            <input class="form-control" type="date" value="2017-08-19" id="iDdate" name="idDate">
+                        </div>
+
+                        <div class="col-2">
+                            <i class="fa fa-calendar fa-2x"></i>
+                        </div>
+                    </div>
 
                 <div class="form-group row">
                     <div class="col-6">
@@ -59,13 +78,13 @@
 
                             <div class="col-4">
                                 <div class="radio">
-                                    <input type="radio" name="optradio">Masculino
+                                    <input type="radio" name="optradio" value="M">Masculino
                                 </div>
                             </div>
 
                             <div class="col-4">
                                 <div class="radio">
-                                    <input type="radio" name="optradio">Feminino
+                                    <input type="radio" name="optradio" value="F">Feminino
                                 </div>
                             </div>
                         </div>
@@ -135,9 +154,9 @@
 
                             <div class="col-3">
                                 <label>Necessidade Especial</label>
-                                <div class="radio"><input type="radio" name="optradio">Sim</div>
-                                <div class="radio"><input type="radio" name="optradio">Nao</div>
-                                <textarea class="form-control-fa mt-3" rows="8" cols="40" id="comment" placeholder="Descricao"></textarea>
+                                <div class="radio"><input type="radio" name="optradio1" value="sim">Sim</div>
+                                <div class="radio"><input type="radio" name="optradio1" value="nao">Nao</div>
+                                <textarea class="form-control-fa mt-3" rows="8" cols="40" id="comment" name="comment" placeholder="Descricao"></textarea>
                             </div>
 
                             <div class="col-3">
@@ -155,7 +174,7 @@
                             </div>
 
                             <div class="col-3">
-                                <select class="form-control fa">
+                                <select class="form-control fa" name="tipoDocumento">
                                     <option>B.I</option>
                                     <option>Cedula</option>
                                     <option>Passaporte</option>
@@ -169,7 +188,6 @@
                     </div>
                 </div>
             </fieldset>
-        </form>
     </div>
 
 
@@ -187,13 +205,14 @@
                 </div>
 
                 <div class="col-4">
-                    <button class="btn" id="depois0">
+                    <button class="btn" id="depois0" type="submit">
                         <span>Proximo</span>
                         <i id="seta" class="fa fa-arrow-circle-right fa-3x"></i>
                     </button>
                 </div>
             </div>
         </div>
+    </form>
     </div>
 </body>
 

@@ -11,4 +11,8 @@ class Encarregado extends Model
     protected $fillable = ["nome", "apelido", "telefone", "email", "localFoto", "password", "genero"];
     protected $table = "encarregado";
     protected $hidden = ["password", "remember_token"];
+
+    public function aluno(){
+        return $this->belongsTo('App\Entities\Aluno', 'idAluno');
+    }
 }

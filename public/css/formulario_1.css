@@ -62,3 +62,29 @@ span{
 	font-size: 13pt;
 	font-weight: bold;
 }
+
+body{
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+#info_area{
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+    color:black;
+}
+
+
+#imprimir{
+    left: 10%;
+}
+
+div#botoes{
+    margin-top: 4%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+div#botoes #cancel{
+    margin-left: 74.8%;
+}

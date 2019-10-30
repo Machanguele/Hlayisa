@@ -54,8 +54,8 @@ class EncarregadoController extends Controller
         }catch(Exception $e){
             \report($e);
         }
-        $idEncarregado = DB::select('select * from encarregado where email = ?', [$request->tMail]);
-        return view("formularios.formulario", ['idEncarregado'=>$idEncarregado]);
+        $idEncarregado = DB::select('select idEncarregado from encarregado where email = ?', [$request->tMail]);
+        return view("formularios.formulario", ['idEncarregado'=> $idEncarregado]);
 
     }
 

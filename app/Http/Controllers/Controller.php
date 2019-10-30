@@ -20,4 +20,9 @@ class Controller extends BaseController
     {
         return view("formularios.formulario_2");
     }
+
+    public function confirmarInscricao()
+    {
+        return view("formularios.final_step");
+    }
 }

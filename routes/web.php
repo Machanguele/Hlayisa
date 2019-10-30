@@ -13,5 +13,7 @@
 
 Route::get('formularioAluno', 'Controller@formularioAluno');
 Route::get('formularioEncarregado', 'Controller@formularioEncarregado');
+Route::get('confirmarInscricao', "Controller@confirmarInscricao");
+
 Route::post('encarregado.store', 'EncarregadoController@store');
-Route::post('encarregado.store', 'EncarregadoController@store');
+Route::post('aluno.store', 'AlunoController@store');
