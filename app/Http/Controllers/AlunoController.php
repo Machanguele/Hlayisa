@@ -36,7 +36,7 @@ class AlunoController extends Controller
      */
     public function store(Request $request)
     {
-
+        try{
             DB::statement(
                 'call inserirAluno(?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
                 [
@@ -56,7 +56,11 @@ class AlunoController extends Controller
                     $request->tcasa,
                 ]
             );
-
+        } catch (QueryException $qe) {
+            \report($qe);
+        } catch (Exception $e) {
+            \report($e);
+        }
         $encarregado = DB::select('select password from encarregado where password = ?', [$request->idEncarregado,]);
         $entidade=DB::select('select entidade from entidade');
         $users = DB::select('select idAluno, nome, apelido from aluno where nrDocumento=?', [$request->tnrID]);

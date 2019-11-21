@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/*=========================================================
+    Delfim cod
+*/
+
 body{
 	background-color: orange;
 }
@@ -63,6 +67,10 @@ span{
 	font-weight: bold;
 }
 
+/*=========================================================
+    Delfim cod
+*/
+
 body{
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
@@ -87,4 +95,57 @@ div#botoes{
 
 div#botoes #cancel{
     margin-left: 74.8%;
+}
+
+/*=====================================================*
+Denise cod
+*/
+
+div#principal {
+	background-color: darkorange;
+	padding-bottom: 50%;
+
+}
+div#principal2 {
+	background-color: darkorange;
+	padding-bottom: 50%;
+
+}
+div#principal3 {
+	background-color: darkorange;
+	padding-bottom: 50%;
+	padding-top: 4%;
+
+}
+div#embaixo {
+	background:rgba(192,192,192,0.3);
+	border:2.1px solid rgba(192,192,192,0.3);
+	margin-top: 12%;
+	width: 30%;
+	text-align: center;
+	height: 20em;
+	border-radius: 3em;
+	padding-top: 1%
+}
+div#embaixo2 {
+	background:rgba(192,192,192,0.3);
+	border:2.1px solid rgba(192,192,192,0.3);
+	margin-top: 12%;
+	width: 30%;
+	text-align: center;
+	height: 20em;
+	margin-bottom: 50%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-radius: 3em;
+}
+.textField {
+	border-bottom: .5px solid #ADD8E6;
+	border-radius: 0.5em;
+	width: 60%;
+	padding-left: 5%;
+	margin-bottom: 2%;
+}
+.button{
+	margin-left: 5%;
 }

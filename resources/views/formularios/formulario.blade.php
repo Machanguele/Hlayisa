@@ -189,13 +189,18 @@
                 </div>
             </fieldset>
     </div>
-
-
     <div class="form-group row mt-4">
         <div class="col-12">
             <div class="row">
                 <div class="col-4">
-                    <nav aria-label="..." id="pag0">
+                    <button class="btn" type="reset" id="antes">
+                        <i id="seta" class="fa fa-arrow-circle-left fa-3x"></i>
+                        <span>Anterior</span>
+                    </button>
+                </div>
+
+                <div class="col-4">
+                    <nav aria-label="..." id="pag">
                         <ul class="pagination pagination-md">
                             <li class="page-item disabled"><a href="#" class="page-link" tabindex="-1">1</a></li>
                             <li class="page-item"><a href="#" class="page-link">2</a></li>
@@ -205,13 +210,16 @@
                 </div>
 
                 <div class="col-4">
-                    <button class="btn" id="depois0" type="submit">
-                        <span>Proximo</span>
-                        <i id="seta" class="fa fa-arrow-circle-right fa-3x"></i>
+
+                    <button class="btn" type="submit" id="depois">
+                        <span>Proximo<span>
+                                <i id="seta" class="fa fa-arrow-circle-right fa-3x"></i>
                     </button>
                 </div>
             </div>
         </div>
+    </div>
+
     </form>
     </div>
 </body>
