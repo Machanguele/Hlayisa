@@ -60,7 +60,9 @@
         <div class = "mt-2" id="botoes">
             <button class = "btn btn-dark" id="imprimir">voltar<i class = "fa fa-arrow-left fa-1x" id="printer"></i></button>
             <button class = "btn btn-danger" id = "cancel">Cancelar</button>
-            <button class = "btn btn-success">Finalizar</button>
+        <a href="login1">
+                <button class = "btn btn-success">Finalizar</button>
+        </a>
         </div>
 
 
