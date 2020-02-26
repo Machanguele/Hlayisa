@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Dados do aluno</title>
+    <title>Dados do aluno das criancas</title>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/formulario_1.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.css">
